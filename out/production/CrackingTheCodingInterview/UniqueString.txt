@@ -1,0 +1,20 @@
+Implement an algorithm to determine if a string has all unique characters. What if you can not use additional data structures?
+class solution{
+public static void main(String args[])
+{
+    String inputString = "test String";
+    System.out.println(testString(inputString));
+}
+public static boolean testString(String inputString)
+{
+String newString = "";
+    for(int i=1; i<=inputString;i++){
+        if(newString.contains(inputString.subString(i-1,i))){
+            return false;
+        }else{
+             newString=newString+inputString.subString(i-1,i);
+        }
+    }
+    return true;
+}
+}

@@ -1,0 +1,2 @@
+1. for string length, forgot brakets //string.length()
+2. substring() was written as subString()
